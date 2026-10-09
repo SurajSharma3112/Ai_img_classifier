@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #101827, #243b55);
+    color: white;
+    min-height: 100vh;
+    padding: 30px 15px;
+}
+
+.container {
+    width: 100%;
+    max-width: 650px;
+    margin: 30px auto;
+    padding: 30px;
+    background: #ffffff;
+    color: #222;
+    border-radius: 18px;
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+    text-align: center;
+    color: #2563eb;
+    margin-bottom: 12px;
+}
+
+.description {
+    text-align: center;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+.upload-box {
+    border: 2px dashed #2563eb;
+    background: #f1f5ff;
+    padding: 25px;
+    border-radius: 12px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.upload-box label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #1d4ed8;
+}
+
+input[type="file"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background: white;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+#preview {
+    display: block;
+    max-width: 100%;
+    max-height: 350px;
+    margin: 20px auto;
+    border-radius: 12px;
+    object-fit: contain;
+}
+
+#preview[hidden] {
+    display: none;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 10px;
+    background: #2563eb;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+button:hover:not(:disabled) {
+    background: #1d4ed8;
+}
+
+button:disabled {
+    background: #94a3b8;
+    cursor: not-allowed;
+}
+
+.result-heading {
+    margin-top: 25px;
+    margin-bottom: 12px;
+    color: #1d4ed8;
+}
+
+#result {
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+    padding: 18px;
+    min-height: 60px;
+    line-height: 1.8;
+    white-space: pre-wrap;
+    overflow-wrap: anywhere;
+    color: #222;
+}
+
+.footer {
+    text-align: center;
+    margin-top: 22px;
+    color: #777;
+    font-size: 13px;
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 25px;
+    }
+}

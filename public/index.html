@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AI Image Classifier</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="container">
+
+        <h1>AI Image Classifier</h1>
+
+        <p class="description">
+            Upload an image and let Artificial Intelligence
+            identify the objects, animals, people, or scenes in it.
+        </p>
+
+        <div class="upload-box">
+
+            <label for="imageInput">
+                Choose an Image
+            </label>
+
+            <input type="file" id="imageInput" accept="image/jpeg,image/png,image/webp">
+
+            <img id="preview" alt="Selected image preview" hidden>
+
+        </div>
+
+        <button id="analyzeBtn" disabled>
+            Analyze Image
+        </button>
+
+        <h3 class="result-heading">
+            AI Analysis Result
+        </h3>
+
+        <div id="result" aria-live="polite">
+            Your image analysis will appear here.
+        </div>
+
+        <p class="footer">
+            AI
+        </p>
+
+    </main>
+
+    <script src="/script.js"></script>
+
+</body>
+
+</html>
